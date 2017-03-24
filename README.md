@@ -21,13 +21,8 @@
 4. SSH into the AWS instance from another terminal instance
 5. Run "sqlcmd" to connect to VoltDB SQL interface
 6. To create a table, run something like:
- CREATE TABLE towns (
- town VARCHAR(64),
- county VARCHAR(64),
- state VARCHAR(2)
- );
- 
- insert into towns values ('Billerica','Middlesex','MA');
+    - CREATE TABLE towns (town VARCHAR(64), county VARCHAR(64),state VARCHAR(2));
+    - insert into towns values ('Billerica','Middlesex','MA');
 7. To query from the VoltDB instance you must:
      - create a stored procedure through the "sqlcmd" interface with name [proc name]
      - send an HTTP get request to the AWS instance using the following address template:
